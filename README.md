@@ -28,3 +28,4 @@ Built with **Python**, **Tkinter**, and **yt-dlp**.
 ### 1. Clone the repository
 
 ```bash
+git clone https://github.com/n0tpetya/url-to-mp3.git
