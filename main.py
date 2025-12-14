@@ -296,6 +296,7 @@ class YTDownloaderGUI(tk.Tk):
 
     def _download_worker(self, url, out_dir):
         ffmpeg_path = get_ffmpeg_path()
+        ydl_opts["ffmpeg_location"] = ffmpeg_path if os.path.exists(ffmpeg_path) else "ffmpeg"
         outtmpl = self.build_outtmpl(out_dir)
 
         ydl_opts = {
